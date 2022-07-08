@@ -1,0 +1,22 @@
+{% extends 'header.html' %}
+{%block content%}
+<center><h2>Feeds</h2></center>
+<center><h3>Latest Game Release</h3><br></center>
+<div class="feedcontainer">
+
+        <div class="firstvid">
+            <center><iframe width="450" height="320" src="https://www.youtube.com/embed/E3Huy2cdih0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </div>
+
+        <div class="secondvid">
+            <center><iframe width="450" height="320" src="https://www.youtube.com/embed/FrXy4fARXns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </div>
+
+        <div class="feedbody">
+            <center><h4>Featuring: Elden Ring</h4><br></center>
+            <p>A new fantasy rpg called Elden Ring will be arriving on February 2022, created by Hidetaka Miyazaki, also known as the director of the most influential Dark Souls video game series. The game features a wide and breathtaking fantasy world that can be traversed on foot or horseback and alone or with other players. The game allows you to create your own character and pick your own playstyle as you decide how to approach exploration and combat. It even includes a stealth mechanic like that from Sekiro: Shadows Die Twice</p>
+        </div>
+</div>
+        {% csrf_token %}
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'header.html' %}
+{%block content%}
+<center><h2>User Feedback</h2></center>
+<div class="box2">
+        <br>
+<form name="myForm" id="TestForm" method = "POST">
+            <center><label>Name: </label>
+            <input type="text" id="nameres" name="nameresp" placeholder="Enter name." required/>
+            </center>
+
+            <br>
+            <br>
+
+            <center><label>Best Game You Ever Played: </label>
+            <input type="text" id="gameres" name="gameresp" placeholder="Enter game title." required/>
+            </center>
+
+            <br>
+            <br>
+
+            <center><label>Response:</label>
+            <br>
+
+                <textarea id="comres" placeholder="Comment." name="comresp" rows="5"required></textarea>
+            </center>
+
+            <br>
+            <br>
+
+            <center><input type="submit" id="btnConfirm" name="btnConfirm" value="Submit"/></center>
+
+            {% csrf_token %}
+
+       </form>
+       </div>
+       <hr>
+        <b>Recently Submited Responses:</b><br>
+        <table id="tablesubs">
+                        {% for item in warehouse3 %}
+                        <tr>
+                                <td>{{forloop.counter}}: {{item.nameuser}}, {{item.game}}, {{item.response}}</td>
+                        </tr>
+                        {% endfor %}
+                       </table>
+                       
+       </div>
+        {% csrf_token %}
+
+{% endblock %}

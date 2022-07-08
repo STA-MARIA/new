@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WASD Gamers</title>
+		<style type="text/css">
+
+	a:link {color: #f4f67e; background-color: transparent; text-decoration: underline;}
+	a:active {color: #f4f67e; background-color: transparent; text-decoration: underline;}
+	a:visited {color: #f4f67e; background-color: transparent; text-decoration: underline;}
+	.grid-container {
+				display: grid;
+				grid-template-areas:
+					"area1 area1 area1 area1 area1 area1"
+					"area2 area3 area4 area5 area6 area7";
+
+
+				grid-gap: 5px;
+				padding: 5px;
+			}
+
+		.title{grid-area: area1; font-family: Helvetica; background-color: #f4f67e; padding: 10px; text-align: justify;}
+		.mainp{grid-area: area2; background-color: #000000; padding: 10px; text-align: justify;}
+		.frstp{grid-area: area3; background-color: #000000; padding: 10px; text-align: justify;}
+		.scndp{grid-area: area4; background-color: #000000; padding: 10px; text-align: justify;}
+		.thrdp{grid-area: area5; background-color: #000000; padding: 10px; text-align: justify;}
+		.frthp{grid-area: area6; background-color: #000000; padding: 10px; text-align: justify;}
+		.ffthp{grid-area: area7; background-color: #000000; padding: 10px; text-align: justify;}
+
+
+	.box2 {
+		width: 800px;
+		height: 320px;
+		margin: 50px auto;
+		background: #f4f67e;
+		position: relative;
+		border-radius: 3%;
+	}
+
+
+	.mainpintro {
+				display: grid;
+				grid-template-areas:
+					"area1"
+					"area2";
+
+
+				grid-gap: 10px;
+				padding: 10px;
+			}
+
+		.mainpagebody{grid-area: area1; font-family: Helvetica; background-color: #f4f67e; padding: 10px; text-align: justify;}
+		.secondbody{grid-area: area2;font-family: Helvetica; background-color: #f4f67e; padding: 10px; text-align: justify;}
+
+
+	.containerreg {
+				display: grid;
+				grid-template-areas:
+					"area1 area1 area2";
+
+
+				grid-gap: 5px;
+				padding: 5px;
+			}
+
+	.regform{grid-area: area1; background-color: #f4f67e; padding: 10px; text-align: justify;}
+	.regusers{grid-area: area2; background-color: #f4f67e; padding: 30px; text-align: justify;}
+
+	.box3 {
+		width: 800px;
+		height: 570px;
+		margin: 35px auto;
+		background: #f4f67e;
+		position: relative;
+		border-radius: 3%;
+	}
+
+	.subcontainer {
+				display: grid;
+				grid-template-areas:
+					"area1 area2 area3"
+					"area1 area2 area3";
+
+
+				grid-gap: 5px;
+				padding: 5px;
+			}
+
+		.subform{grid-area: area1; background-color: #f4f67e; padding: 10px;}
+		.planprice{grid-area: area2; background-color: #f4f67e; padding: 10px; text-align: justify;}
+		.subtable{grid-area: area3; background-color: #f4f67e; padding: 10px; text-align: justify;}
+
+
+
+	.feedcontainer {
+				display: grid;
+				grid-template-areas:
+					"area1 area2"
+					"area3 area3";
+
+
+				grid-gap: 5px;
+				padding: 5px;
+			}
+
+	.firstvid{grid-area: area1; background-color: #000000;}
+	.secondvid{grid-area: area2; background-color: #000000;}
+	.feedbody{grid-area: area3; font-family: Helvetica; background-color: #f4f67e; padding: 10px; text-align: justify;}
+
+	</style>
+	</head>
+	<body bgcolor="#da76e6">
+		<div class="grid-container">
+			<div class="title">
+				<center><h1>WASD Gamers</h1></center>
+			</div>
+			<div class="mainp">
+				<center><a href="/">Homepage</a></center>
+			</div>
+			<div class="frstp">
+				<center><a href="/registration">Registration</a></center>
+			</div>
+			<div class="scndp">
+				<center><a href="/subscription">Subscription</a></center>
+			</div>
+			<div class="thrdp">
+				<center><a href="/feedback">Feedbacks</a></center>
+			</div>
+			<div class="frthp">
+				<center><a href="/community">Community</a></center>
+			</div>
+			<div class="ffthp">
+				<center><a href="/feeds">Feeds</a></center>
+			</div>
+		</div>
+	{% block content %}
+
+	{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'header.html' %}
+{%block content%}
+<div><center><h2>Community Picks</h2></center>
+    <form name="myForm" id="TestForm" method = "POST">
+        <div class="box3">
+            <br>
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/ktXyT5PJGqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+            <center><h4>Featuring: Dragon Ball FighterZ</h4><br></center>
+            <p>If you're into fighting games and at the same time, a Dragon Ball fan, you might want to check out Dragon Ball FighterZ. This game is extremely fun and it is very easy to pick up especially if you're new to fighting games. It's even enjoyable for people who don't watch Dragon Ball. The controls are easy and the animations are very good. It has a good matchmaking system and has a wide roster of characters from the anime. I advice waiting for a sale because it is a bit pricy plus it has a lot of DLCs. I bought this game during the summer sale and it is definitely worth it.</p>
+       </div>
+        {% csrf_token %}
+
+{% endblock %}
